@@ -1,5 +1,7 @@
 package co.edu.utp.misiontic2022.c2;
 
+import co.edu.utp.misiontic2022.c2.enumeraciones.Color;
+
 public class Coche extends Vehiculo {
     private Integer numRuedas;
 
@@ -7,7 +9,7 @@ public class Coche extends Vehiculo {
         super();       
     }
 
-    public Coche(String color,Integer numSerie, Integer numRuedas){ 
+    public Coche(Color color,Integer numSerie, Integer numRuedas){ 
         super(color,numSerie);
         this.numRuedas = numRuedas;
     }

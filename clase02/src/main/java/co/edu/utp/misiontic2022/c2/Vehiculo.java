@@ -1,24 +1,26 @@
 package co.edu.utp.misiontic2022.c2;
 
+import co.edu.utp.misiontic2022.c2.enumeraciones.Color;
+
 public class Vehiculo {
     // atributos
-    private String color;
+    private Color color;
     private Integer numSerie;
 
     // constructor
     public Vehiculo(){
     }
 
-    public Vehiculo(String color,Integer numSerie){
+    public Vehiculo(Color color,Integer numSerie){
         this.color = color;
         this.numSerie = numSerie;
     }
 
-    public String getColor(){
+    public Color getColor(){
         return color;
     }
 
-    public void setColor(String color){
+    public void setColor(Color color){
         this.color = color;
     }
 
