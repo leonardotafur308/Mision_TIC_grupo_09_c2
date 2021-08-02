@@ -74,7 +74,7 @@ public class App
         try {
             conn = DriverManager.getConnection(url);
             stmt = conn.createStatement();
-            var sql = "SELECT employee_id,first_name,last_name,email "
+            String sql = "SELECT employee_id,first_name,last_name,email "
                       +"FROM employees WHERE (employee_id < 110)";
             rs = stmt.executeQuery(sql);
             while(rs.next()){
