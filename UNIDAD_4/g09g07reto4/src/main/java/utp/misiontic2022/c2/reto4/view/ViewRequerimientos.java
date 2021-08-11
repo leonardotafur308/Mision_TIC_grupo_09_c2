@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import utp.misiontic2022.c2.reto4.controller.ControllerRequerimientos;
 import utp.misiontic2022.c2.reto4.model.vo.Requerimiento_1;
 import utp.misiontic2022.c2.reto4.model.vo.Requerimiento_2;
+import utp.misiontic2022.c2.reto4.model.vo.Requerimiento_3;
 
 public class ViewRequerimientos {
     
@@ -46,5 +47,20 @@ public class ViewRequerimientos {
         } catch (Exception e){
             System.err.println(e);
         }
-    }    
+    } 
+    
+    public static void requerimiento3() {
+        try {
+            ArrayList<Requerimiento_3> listaRequerimiento_3;
+            listaRequerimiento_3 = controlador.consultaRequerimiento_3();
+
+            for(Requerimiento_3 requerimiento_3: listaRequerimiento_3){
+                System.out.println(
+                    requerimiento_3.getAbrev()
+                );
+            }
+        } catch (Exception e){
+            System.err.println(e);
+        }
+    } 
 }
